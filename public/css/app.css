@@ -1,0 +1,49 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Pagination styles */
+.pagination {
+    margin: 35px -30px;
+}
+
+.pagination .page-item .page-link {
+    color: #343a40;
+    background-color: #ffffff;
+    border-color: #ced4da;
+}
+
+.pagination .page-item.active .page-link {
+    color: #ffffff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.pagination .page-item .page-link:hover {
+    color: #ffffff;
+    background-color: #1f2326;
+    border-color: #1f2326;
+}
+
+.hero {
+    background-image: url('/images/home-page/Artboard.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.about {
+    background-image: url('/images/home-page/index.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 1.8rem;
+    line-height: 2rem;
+    height: 60vh;
+}
+
+@media(max-width: 1600px) {
+    .popular-beans {
+        margin-top: 12rem;
+    }
+}
+

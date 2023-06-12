@@ -12,8 +12,8 @@
     @endif
 </div>
 
-<style>
-    .hero {
+<!-- <style>
+    /* .hero {
         background-image: url('{{ asset("images/home-page/Artboard.png") }}');
         background-size: cover;
         background-position: center;
@@ -21,14 +21,18 @@
     }
 
     .about {
-        background-image: url('{{ asset("storage/images/index.png") }}');
+        background-image: url('{{ asset("images/home-page/index.png") }}');
         background-size: cover;
         background-position: center;
         margin-top: 1.8rem;
         line-height: 2rem;
         height: 60vh;
     }
-</style>
+
+    .popular-beans { 
+        margin-top: 12rem;
+    } */
+</style> -->
 
 <section class="hero d-flex align-items-center text-dark py-5">
     <div class="container">
@@ -57,7 +61,7 @@
     </section>
 
     <section>
-        <div class="row border-top">
+        <div class="row border-top popular-beans">
             <h2 class="mt-5">Popular Beans</h2>
             @forelse ($coffees->shuffle()->slice(0, 4) as $coffee)
             <div class="col-md-3 mb-3 mt-5">
